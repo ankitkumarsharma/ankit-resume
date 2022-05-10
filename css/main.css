@@ -2808,6 +2808,7 @@ blockquote {
 .title-block h3 {
   color: #6c6d73;
   margin: 10px 0px;
+  word-break: break-all;
 }
 
 .title-block .sp-subtitle {
