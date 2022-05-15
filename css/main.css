@@ -2922,4 +2922,52 @@ blockquote {
     font-size: 18px;
   }
 }
-
+/*----- tabs css */
+.tab-container{
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+.tab-menu{}
+.tab-menu ul{
+	margin: 0;
+	padding: 0;
+}
+.tab-menu ul li{
+	list-style-type: none;
+	display: inline-block;
+}
+.tab-menu ul li a{
+	text-decoration: none;
+  color: #333;
+  cursor: pointer;
+  margin: 10px;
+}
+.tab-menu ul li a.active-a{
+	color: #04b4e0;
+}
+.tab{
+	display: none;
+  padding: 10px;
+  padding-top: 15px;
+}
+.tab h2{
+	color: rgba(0,0,0,.7);
+}
+.tab p{
+	color: rgba(0,0,0,0.6);
+	text-align: justify;
+}
+.tab-active{
+	display: block;
+}
+.primary-color{
+  color: #04b4e0;
+}
+.ask-your-doubt{
+  position: fixed;
+  top: 7px;
+  z-index: 9999;
+  right: 8px;
+  cursor: pointer;
+}
