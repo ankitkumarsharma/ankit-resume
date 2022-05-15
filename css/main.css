@@ -206,7 +206,13 @@ input[type="submit"]:focus {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-
+.ask-your-doubt{
+  position: fixed;
+  top: 7px;
+  z-index: 9999;
+  right: 8px;
+  cursor: pointer;
+}
 
 
 /* ============================================================================= 
@@ -2547,7 +2553,6 @@ blockquote {
   .portfolio-grid figure {
     width: 100%;
   }
-
   .portfolio-grid.three-columns figure,
   .portfolio-grid.two-columns figure {
     width: 100%;
@@ -2907,6 +2912,13 @@ blockquote {
 }
 
 @media only screen and (max-width: 1024px) {
+  .ask-your-doubt {
+    position: fixed;
+    top: 10px;
+    z-index: 9999;
+    right: 58px;
+    cursor: pointer;
+}
  .lm-animated-bg {
     display: none;
  }
@@ -2963,11 +2975,4 @@ blockquote {
 }
 .primary-color{
   color: #04b4e0;
-}
-.ask-your-doubt{
-  position: fixed;
-  top: 7px;
-  z-index: 9999;
-  right: 8px;
-  cursor: pointer;
 }
