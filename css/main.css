@@ -2801,7 +2801,15 @@ blockquote {
   position: relative;
   text-align: center;
 }
-
+.title-block .title-img{
+  text-align: center;
+  text-align: -webkit-center;
+}
+.title-block .title-img img{
+  width: 170px;
+  border: 3px solid #04b4e0;
+  border-radius: 100px;
+}
 .title-block h2 {
   font-size: 60px;
   line-height: 74px;
