@@ -22,72 +22,27 @@
           <img src="../assets/img/ankit.JPG" alt="Ankit Kumar Sharma" />
         </div>
         <div class="header-titles">
-          <h2>Ankit Kumar Sharma</h2>
-          <h4>Software Engineer</h4>
+          <h2>{{myInfo.name}}</h2>
+          <h4>{{myInfo.profession}}</h4>
         </div>
       </div>
 
       <ul class="main-menu">
-        <li class="active">
-          <a (click)="onTab()" href="#home" class="nav-anim">
-            <span class="menu-icon lnr lnr-home"></span>
-            <span class="link-text">Home</span>
-          </a>
-        </li>
-        <li>
-          <a (click)="onTab()" href="#about-me" class="nav-anim">
-            <span class="menu-icon lnr lnr-user"></span>
-            <span class="link-text">About Me</span>
-          </a>
-        </li>
-        <li>
-          <a (click)="onTab()" href="#resume" class="nav-anim">
-            <span class="menu-icon lnr lnr-graduation-hat"></span>
-            <span class="link-text">Resume</span>
-          </a>
-        </li>
-        <li>
-          <a (click)="onTab()" href="#portfolio" class="nav-anim">
-            <span class="menu-icon lnr lnr-briefcase"></span>
-            <span class="link-text">Portfolio</span>
-          </a>
-        </li>
-        <li>
-          <a (click)="onTab()" href="#blog" class="nav-anim">
-            <span class="menu-icon lnr lnr-book"></span>
-            <span class="link-text">Blogs n Talks</span>
-          </a>
-        </li>
-        <li>
-          <a (click)="onTab()" href="#contact" class="nav-anim">
-            <span class="menu-icon lnr lnr-envelope"></span>
-            <span class="link-text">Contact</span>
+        <li *ngFor="let item of headerMenu">
+          <a (click)="onTab()" href="{{item.link}}" class="nav-anim">
+            <span class="menu-icon lnr {{item.iconClass}}"></span>
+            <span class="link-text">{{item.label}}</span>
           </a>
         </li>
       </ul>
 
       <div class="social-links">
         <ul>
-          <li>
+          <li *ngFor="let item of socialLinks">
             <a
-              href="https://www.linkedin.com/in/ankit-kumar-sharma1101/"
+              href="{{item.link}}"
               target="_blank"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://github.com/ankitkumarsharma" target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/ankit_k_sharma" target="_blank"
-              ><i class="fab fa-twitter"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://medium.com/@ankit_k_sharma" target="_blank"
-              ><i class="fab fa-medium"></i
+              ><i class="fab {{item.icon}}"></i
             ></a>
           </li>
         </ul>
@@ -102,7 +57,7 @@
         >
       </div>
 
-      <div class="copyrights">© 2022 All rights reserved.</div>
+      <div class="copyrights">{{copyright}}</div>
     </header>
 
     <!-- Mobile Navigation -->
@@ -128,8 +83,7 @@
       <div class="animated-sections">
         <div class="ask-your-doubt">
           <a
-            onclick="alert('coming soon ...')"
-            target="_blank"
+            (click)="askYourDoubts()"
             class="btn btn-primary"
             >Ask Your Doubts</a
           >

@@ -1,4 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
+import { CONSTANT } from './core/app.constant';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +10,11 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 export class AppComponent {
   @ViewChild('ankitBlogs', { static: false })
   blogs!: ElementRef;
-  constructor(){
+  readonly myInfo = CONSTANT.myInfo;
+  readonly headerMenu = CONSTANT.headerMenu;
+  readonly socialLinks = CONSTANT.socialLinks;
+  readonly copyright = CONSTANT.copyright;
+  constructor(private toastr:ToastrService){
   }
   onTab(){
     this.blogs.nativeElement.querySelectorAll('.section-active').forEach(
@@ -16,6 +22,9 @@ export class AppComponent {
         blog.classList.remove('section-active');
       }
     )
+  }
+  askYourDoubts() {
+    this.toastr.success('coming soon ...', 'Thanks!');
   }
 
 }
