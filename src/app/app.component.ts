@@ -1,6 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
-import { CONSTANT } from './core/app.constant';
+import { CONSTANT } from './core/constants/app.constant';
 
 @Component({
   selector: 'app-root',
