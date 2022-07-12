@@ -1,0 +1,112 @@
+<section data-id="blog" class="animated-section">
+  <div class="section-content">
+    <div class="page-title">
+      <h2>Blogs n Talks</h2>
+    </div>
+    <!-- tabs -->
+    <div class="tab-container">
+      <div class="tab-menu">
+        <ul>
+          <li>
+            <a class="tab-a active-a" data-id="tab1">Blogs</a>
+          </li>
+          <li><a class="tab-a" data-id="tab2">Webinars</a></li>
+          <li><a class="tab-a" data-id="tab3">Seminars</a></li>
+        </ul>
+      </div>
+      <!--end of tab-menu-->
+      <div class="tab tab-active" data-id="tab1">
+        <!---blogs-->
+        <div class="row">
+          <div class="col-xs-12 col-sm-12">
+            <div class="blog-masonry two-columns clearfix">
+              <!-- Blog Post 1 -->
+              <div *ngFor="let item of blogs.tab1;let i=index;" class="item post-{{i+1}}">
+                <div class="blog-card">
+                  <div class="media-block">
+                    <div class="category">
+                      <a title="{{item.category}}">{{item.category}}</a>
+                    </div>
+                    <a
+                      target="_blank"
+                      href="{{item.link}}"
+                    >
+                      <img
+                        src="{{item.src}}"
+                        class="size-blog-masonry-image-two-c"
+                        alt="{{item.title}}"
+                        title="{{item.title}}"
+                      />
+                      <div class="mask"></div>
+                    </a>
+                  </div>
+                  <div class="post-info">
+                    <div class="post-date">{{item.date}}</div>
+                    <a
+                      target="_blank"
+                      href="{{item.link}}"
+                    >
+                      <h4 class="blog-item-title">
+                        {{item.title}}
+                      </h4>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end of tab one-->
+
+      <div class="tab" data-id="tab2">
+        <!---blogs-->
+        <div class="row">
+          <div class="col-xs-12 col-sm-12">
+            <div class="blog-masonry two-columns clearfix">
+              <!-- Blog Post 1 -->
+              <div *ngFor="let item of blogs.tab2;let i=index;" class="item post-{{i+1}}">
+                <div class="blog-card">
+                  <div class="media-block">
+                    <div class="category">
+                      <a title="{{item.category}}">{{item.category}}</a>
+                    </div>
+                    <a
+                      target="_blank"
+                      href="{{item.link}}"
+                    >
+                      <img
+                        src="{{item.src}}"
+                        class="size-blog-masonry-image-two-c"
+                        alt="{{item.title}}"
+                        title="{{item.title}}"
+                      />
+                      <div class="mask"></div>
+                    </a>
+                  </div>
+                  <div class="post-info">
+                    <div class="post-date">{{item.date}}</div>
+                    <a
+                      target="_blank"
+                      href="{{item.link}}"
+                    >
+                      <h4 class="blog-item-title">
+                        {{item.title}}
+                      </h4>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end of tab two-->
+      <div class="tab" data-id="tab3">
+        <p>will update soon ...</p>
+      </div>
+      <!--end of tab three-->
+    </div>
+    <!--end of container-->
+  </div>
+</section>
