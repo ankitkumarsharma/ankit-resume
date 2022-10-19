@@ -4,6 +4,8 @@ export const CONSTANT = {
     profession:'Software Engineer',
     designation:'Technical Lead',
     emailId:'aks.computerexpert@gmail.com',
+    mobile:'+91 9311564928',
+    place: 'Delhi'
   },
   headerMenu:[
     {
@@ -60,4 +62,8 @@ export const CONSTANT = {
     }
   ],
   copyright: '© 2022 All rights reserved.'
+}
+
+export const API_CONSTANT = {
+  emailUrl: 'https://mailthis.to/contactMe',
 }
