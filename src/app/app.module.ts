@@ -12,7 +12,9 @@ import { ContactMeComponent } from './components/contact-me/contact-me.component
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http';
+import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
+import { LoaderComponent } from './components/loader/loader.component';
+import { LoaderInterceptor } from './core/interceptors/loader/loader-interceptor';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,7 @@ import {HttpClientModule} from '@angular/common/http';
     PortfolioComponent,
     BlogComponent,
     ContactMeComponent,
+    LoaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,9 @@ import {HttpClientModule} from '@angular/common/http';
     }),
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    {provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true},
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
