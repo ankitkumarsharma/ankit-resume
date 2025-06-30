@@ -1,0 +1,90 @@
+<section class="page-container">
+    <div class="section-content">
+        <div class="page-title">
+            <h2>About <span>Me</span></h2>
+        </div>
+
+        <!-- Personal Information -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-7">
+                <p>
+                    <span class="primary-color">{{myInfo.name}}</span>,
+                    {{aboutMe.info}}
+                </p>
+            </div>
+
+            <div class="col-xs-12 col-sm-5">
+                <div class="info-list">
+                    <ul>
+                        @for (item of aboutMe.infoList; track $index) {
+                        <li>
+                            <span class="title">{{item.title}}</span>
+                            <span class="value">{{item.value}}</span>
+                        </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End of Personal Information -->
+
+        <div class="white-space-50"></div>
+
+        <!-- Services -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <div class="block-title">
+                    <h3>What <span>I Do</span></h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <div class="col-inner">
+                    <div class="info-list-w-icon row">
+                        @for (item of aboutMe.services; track $index) {
+                        <div class="info-block-w-icon col-sm-6">
+                            <div class="ci-icon">
+                                <i class="lnr {{item.icon}}"></i>
+                            </div>
+                            <div class="ci-text">
+                                <h4>{{item.title}}</h4>
+                                <p>
+                                    {{item.info}}
+                                </p>
+                            </div>
+                        </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Services -->
+
+        <div class="white-space-50"></div>
+
+        <!-- Fun Facts -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <div class="block-title">
+                    <h3>Fun <span>Facts</span></h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            @for (item of aboutMe.funFacts; track $index) {
+            <div class="col-xs-12 col-sm-4">
+                <div class="fun-fact gray-default">
+                    <i class="lnr {{item.icon}}"></i>
+                    <h4>{{item.title}}</h4>
+                    <span class="fun-fact-block-value">{{item.count}}+</span>
+                    <span class="fun-fact-block-text"></span>
+                </div>
+            </div>
+            }
+        </div>
+        <!-- End of Fun Facts -->
+    </div>
+</section>
