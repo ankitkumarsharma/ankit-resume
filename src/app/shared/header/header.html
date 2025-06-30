@@ -1,0 +1,43 @@
+<header id="site_header" [class.mobile-menu-hide]="!mobileMenuOpen" class="header ">
+  <div class="header-content">
+    <div class="header-photo">
+      <img src="../assets/img/ankit.jpeg" alt="{{myInfo.name}}" />
+    </div>
+    <div class="header-titles">
+      <h2>{{myInfo.name}}</h2>
+      <h4>{{myInfo.profession}}</h4>
+    </div>
+  </div>
+  <ul class="main-menu">
+    @for (item of headerMenu; track $index) {
+    <li>
+      <a (click)="onTab()" [routerLink]="item.link" [routerLinkActive]="'active'" class="nav-anim">
+        <span class="menu-icon lnr {{item.iconClass}}"></span>
+        <span class="link-text">{{item.label}}</span>
+      </a>
+    </li>
+    }
+  </ul>
+  <div class="social-links">
+    <ul>
+      @for (item of socialLinks; track $index) {
+      <li>
+        <a href="{{item.link}}" target="_blank"><i class="fab {{item.icon}}"></i></a>
+      </li>
+      }
+    </ul>
+  </div>
+  <div class="header-buttons">
+    <a href="../assets/resume/Ankit_Kumar_Sharma_Resume.docx" target="_blank" class="btn btn-primary">Download
+      CV</a>
+  </div>
+
+  <div class="copyrights">{{copyright}}</div>
+</header>
+<!-- Mobile Navigation -->
+<div [class.open]="mobileMenuOpen" class="menu-toggle" (click)="toggleMobileMenu()">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+<!-- End Mobile Navigation -->

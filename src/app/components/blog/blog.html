@@ -7,15 +7,14 @@
         <div class="tab-container">
             <div class="tab-menu">
                 <ul>
-                    <li>
-                        <a class="tab-a active-a">Blogs</a>
-                    </li>
-                    <li><a class="tab-a">Webinars</a></li>
-                    <li><a class="tab-a">Seminars</a></li>
+                    @for (item of blogs.tabMenu; track $index; let i=$index;) {
+                    <li (click)="onTabFn(i)"><a [class.active-a]="tabActiveIndex == i" class="tab-a active-a">{{item}}</a></li>
+                    }
                 </ul>
             </div>
             <!--end of tab-menu-->
-            <div class="tab tab-active">
+            @if (tabActiveIndex == 0) {
+            <div [class.tab-active]="tabActiveIndex == 0" class="tab">
                 <!---blogs-->
                 <div class="row">
                     <div class="col-xs-12 col-sm-12">
@@ -50,8 +49,8 @@
                 </div>
             </div>
             <!--end of tab one-->
-
-            <div class="tab">
+            } @else if (tabActiveIndex == 1) {
+            <div [class.tab-active]="tabActiveIndex == 1" class="tab">
                 <!---blogs-->
                 <div class="row">
                     <div class="col-xs-12 col-sm-12">
@@ -86,10 +85,7 @@
                 </div>
             </div>
             <!--end of tab two-->
-            <div class="tab">
-                <p>will update soon ...</p>
-            </div>
-            <!--end of tab three-->
+            }
         </div>
         <!--end of container-->
     </div>
