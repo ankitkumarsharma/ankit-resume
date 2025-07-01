@@ -25,7 +25,8 @@
                 "glob": "**/*",
                 "input": "public"
               },
-              "src/assets/img"
+              "src/assets/img",
+              "src/assets/resume"
             ],
             "styles": [
               "src/styles.scss"
