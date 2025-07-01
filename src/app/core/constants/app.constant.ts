@@ -11,32 +11,32 @@ export const CONSTANT = {
     {
       label:'Home',
       iconClass:'lnr-home',
-      link:'#home'
+      link:'home'
     },
     {
       label:'About Me',
       iconClass:'lnr-user',
-      link:'#about-me'
+      link:'about-me'
     },
     {
       label:'Resume',
       iconClass:'lnr-graduation-hat',
-      link:'#resume'
+      link:'my-resume'
     },
     {
       label:'Portfolio',
       iconClass:'lnr-briefcase',
-      link:'#portfolio'
+      link:'portfolio'
     },
     {
       label:'Blogs n Talks',
       iconClass:'lnr-book',
-      link:'#blog'
+      link:'blogs-talks'
     },
     {
       label:'Contact',
       iconClass:'lnr-envelope',
-      link:'#contact'
+      link:'contact-me'
     }
   ],
   socialLinks:[
