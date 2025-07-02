@@ -25,5 +25,8 @@ export const routes: Routes = [
     {
         path: 'contact-me',
         loadComponent: () => import('./components/contact-me/contact-me').then(m => m.ContactMe)
+    },
+    {
+        path: '**', loadComponent: () => import('./shared/page-not-found/page-not-found').then(m => m.PageNotFound)
     }
 ];
