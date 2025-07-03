@@ -1,3 +1,7 @@
+@if (loader()) {
+<app-loader />
+} @else {
 <home-container>
   <router-outlet />
 </home-container>
+}
