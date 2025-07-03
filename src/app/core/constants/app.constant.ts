@@ -61,7 +61,7 @@ export const CONSTANT = {
       icon:'fa-medium'
     }
   ],
-  copyright: '© 2022 All rights reserved.'
+  copyright: '© 2025 All rights reserved.'
 }
 
 export const API_CONSTANT = {

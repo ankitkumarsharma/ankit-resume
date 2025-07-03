@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HOME } from '../../core/constants/home.constant';
 
 @Component({
   selector: 'app-home',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './home.scss'
 })
 export class Home {
-
+  homeData = HOME;
 }

@@ -25,7 +25,9 @@
                 "glob": "**/*",
                 "input": "public"
               },
-              "src/assets/img"
+              "src/assets/img",
+              "src/assets/resume",
+              "src/assets/portfolio/angular/dynamic-forms-generation-v19/browser"
             ],
             "styles": [
               "src/styles.scss"
