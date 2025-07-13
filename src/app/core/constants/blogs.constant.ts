@@ -44,6 +44,13 @@ export const BLOGS = {
           src: 'https://miro.medium.com/v2/resize:fit:1100/format:webp/1*PEgVd9jkSLzgDx5ygBUbag.png',
           title: 'What’s New in Angular 17',
           date: '21 Nov 2023',
+        },
+        {
+          category: 'Development',
+          link: 'https://medium.com/stackademic/introducing-angular-snippets-empowering-the-angular-community-with-futuristic-collaboration-6d0e6dafc075',
+          src: 'https://miro.medium.com/v2/resize:fit:1100/format:webp/1*PY6m9Na69vossI-N3iDdAA.png',
+          title: 'Introducing Angular Snippets: Empowering the Angular Community',
+          date: '12 Jul 2025',
         }
       ]
     },
