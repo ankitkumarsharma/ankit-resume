@@ -51,6 +51,20 @@ export const BLOGS = {
           src: 'https://miro.medium.com/v2/resize:fit:1100/format:webp/1*PY6m9Na69vossI-N3iDdAA.png',
           title: 'Introducing Angular Snippets: Empowering the Angular Community',
           date: '12 Jul 2025',
+        },
+        {
+          category: 'Development',
+          link: 'https://medium.com/@ankit_k_sharma/ssr-vs-ssg-vs-csr-in-angular-understanding-rendering-strategies-1dfdeb1d8a74',
+          src: 'https://miro.medium.com/v2/resize:fit:1100/format:webp/1*3eKGRU8VxxjLlXIK3yAFHg.jpeg',
+          title: 'SSR vs SSG vs CSR in Angular: Understanding Rendering Strategies',
+          date: '29 Jul 2025',
+        },
+        {
+          category: 'Development',
+          link: 'https://medium.com/@ankit_k_sharma/how-to-create-a-custom-rich-text-editor-in-angular-step-by-step-guide-guide-f96c8c98cf8a',
+          src: 'https://miro.medium.com/v2/resize:fit:1100/format:webp/1*wJ2MMDblWE2x68NOKqeX0A.png',
+          title: 'How to create a Custom Rich Text Editor in Angular (Step-by-Step Guide)',
+          date: '1 Aug 2025',
         }
       ]
     },

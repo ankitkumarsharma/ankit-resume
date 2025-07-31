@@ -47,7 +47,7 @@ export const PORTFOLIO = {
       title: 'Angular Snippets App',
       image: '../assets/img/portfolio/angular-snipp.png',
       link: 'https://angular-snippets.vercel.app/',
-      categories: ['all','angular'],
+      categories: ['all','angular','fullstack'],
       demo: true
     },
     {
