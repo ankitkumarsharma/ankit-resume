@@ -77,6 +77,13 @@ export const PORTFOLIO = {
       link: 'https://www.npmjs.com/package/@ng-aks/forms',
       categories: ['all','npm-packages'],
       demo: true
+    },
+    {
+      title: 'Angular Rich Text Editor - NPM Package',
+      image: '../assets/img/portfolio/angular-npm2.png',
+      link: 'https://www.npmjs.com/package/@ng-aks/editor',
+      categories: ['all','npm-packages'],
+      demo: true
     }
 
   ]
